@@ -7,12 +7,17 @@ public class DesafioDeCodigo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
-        ArrayList<Integer> numeroFatorial = new ArrayList<Integer>();
-        numeroFatorial.add(N);
+        int fatorial = 1;
 
-        for (int i = N; i < numeroFatorial.; i--) {
-            N = numeroFatorial.size() * (N-1);
+        if (N < 0) {
+            System.out.println("Não existe fatorial para números negativos");
+        } else {
+            for (int i = 1; i <= N; i++) {
+                fatorial *= i;
+            }
+            System.out.println(fatorial);
         }
-        System.out.println(N);
+
+
     }
 }
